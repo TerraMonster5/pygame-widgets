@@ -9,19 +9,19 @@ class Widget:
     def draw(self):
         pass
 
+class Label(Widget):
+    pass
+
 class Button(Widget):
     def __init__(self, parent, x: int, y: int, width: Union[int, None]=None, height: Union[int, None]=None, bg: Union[pyg.Color, str, None]=None, state: str="enabled", default: str="enabled", text: str="", command: Union[Callable, None]=None) -> None:
         super().__init__(parent, x, y, text)
 
-class Entry(Widget):
+class CheckButton(Button):
     pass
 
-class CheckButton(Widget):
-    pass
-
-class RadioButton(Widget):
+class RadioButton(Button):
     __groups: dict = {}
     pass
 
-class Label(Widget):
+class Entry(Widget):
     pass
