@@ -9,7 +9,7 @@ class Widget:
         pass
 
 class Button(Widget):
-    def __init__(self, parent, x: int, y: int, width: Union[int, None]=None, height: Union[int, None]=None, text: str="", command: Union[Callable, None]=None) -> None:
+    def __init__(self, parent, x: int, y: int, width: Union[int, None]=None, height: Union[int, None]=None, state: str="enabled", default: str="enabled", text: str="", command: Union[Callable, None]=None) -> None:
         pass
 
 class Entry(Widget):
