@@ -13,7 +13,21 @@ class Label(Widget):
     pass
 
 class Button(Widget):
-    def __init__(self, parent, x: int, y: int, width: Union[int, None]=None, height: Union[int, None]=None, bg: Union[pyg.Color, str, None]=None, state: str="enabled", default: str="enabled", text: str="", command: Union[Callable, None]=None) -> None:
+    def __init__(self,
+                 parent,
+                 x: int,
+                 y: int,
+                 width: Union[int, None]=None,
+                 height: Union[int, None]=None,
+                 bg: Union[pyg.Color, str, None]=None,
+                 state: str="enabled",
+                 default: str="enabled",
+                 text: str="",
+                 command: Union[Callable, None]=None) -> None:
+        
+        """
+        """
+
         super().__init__(parent, x, y, text)
 
 class CheckButton(Button):
